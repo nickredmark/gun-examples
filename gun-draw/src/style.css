@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 12px;
+  background-color: #eee;
+}
+
+body,
+html,
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.new-drawing {
+  width: 20rem;
+  margin: auto;
+  text-align: center;
+}
+
+.drawing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+  background-color: white;
+}
+
+.drawing-header {
+  border-bottom: 1px solid rgb(0, 5, 78);
+}
+.drawing-title {
+  font-size: 120%;
+  color: black;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.drawing-tools {
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  z-index: 10;
+}
+.drawing-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.drawing-tools button {
+  pointer-events: all;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  background: white;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.drawing-tools button:hover {
+  background: lightgray;
+}
+.drawing-tools button.active {
+  background: rgb(42, 136, 224);
+  border: 1px solid rgb(42, 136, 224);
+}
+.color {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto;
+}
+.sketch-picker {
+  pointer-events: all;
+}
+
+.drawing-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+  position: relative;
+}
+.drawing-content svg {
+  flex: 1 1 auto;
+}
+
+.drawing-content.hand {
+  cursor: grab;
+}
+.drawing-content.pen {
+  cursor: default;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(248, 251, 255);
+}

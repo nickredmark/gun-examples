@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body,
+html,
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.navigation,
+.page {
+  display: flex;
+}
+
+iframe {
+  width: 100%;
+  flex: 1 1 0%;
+}
+
+.navigation {
+  width: 15rem;
+  flex: none;
+}
+
+.page {
+  flex: 1 1 auto;
+}

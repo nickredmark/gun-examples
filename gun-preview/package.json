@@ -1,0 +1,37 @@
+{
+  "name": "gun-preview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm public/bundle.js",
+    "build-dev": "webpack -d --mode development",
+    "build": "webpack -p --mode production",
+    "start": "webpack-dev-server --hot --mode development"
+  },
+  "dependencies": {
+    "crdt-continuous-sequence": "^1.0.0",
+    "gun": "^0.2019.930",
+    "nicks-gun-utils": "^2.2.0",
+    "react": "^16.11.0",
+    "react-beautiful-dnd": "^12.0.0",
+    "react-dom": "^16.11.0",
+    "react-hot-loader": "^4.12.16"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-modules": "^0.1.1",
+    "@babel/preset-react": "^7.7.0",
+    "@hot-loader/react-dom": "^16.11.0+4.12.16",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}

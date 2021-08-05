@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+body,
+html,
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.nodes {
+  margin-bottom: 1rem;
+}
+
+.node-id {
+}
+
+.node-attributes {
+  margin-left: 1rem;
+}
+.node-fixed-attributes {
+  margin-bottom: 1rem;
+}
+.reference {
+  margin-left: 1rem;
+}
+.attribute {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0;
+}
+.reference-attribute > .key,
+.reference-link {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.key,
+.new-attribute-key,
+.new-value {
+  margin-right: 0.5rem;
+}
+.value {
+  cursor: pointer;
+}
+.edit-value {
+  display: inline;
+}
+
+.new-attribute input {
+  width: 5rem;
+}
+.new-attribute input:nth-child(2) {
+  width: 10rem;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid;
+  padding: 0;
+  font-size: inherit;
+  display: inline;
+}
+
+a {
+  color: inherit;
+}
+
+.pair {
+  margin-bottom: 1rem;
+}
+
+.priv span {
+  cursor: pointer;
+}
+
+.add-keys input,
+.add-keys button,
+.auth input,
+.auth button {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.new-sub-attribute {
+  margin-left: 2rem;
+}
+
+span.disabled {
+  color: gray;
+  font-style: italic;
+  font-size: 90%;
+}

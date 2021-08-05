@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 12px;
+  background-color: #eee;
+}
+
+body,
+html,
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.new-calendar {
+  width: 20rem;
+  margin: auto;
+  text-align: center;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+  background-color: white;
+}
+
+.calendar-title {
+  font-size: 120%;
+  color: black;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.calendar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.month,
+.year {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 0.75rem;
+}
+
+.calendar-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+}
+
+.days-titles,
+.days-hours {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.days-hours {
+  flex: 1 1 0%;
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.day,
+.day-title {
+  flex: 1 1 0%;
+  max-width: 14.285714286%;
+}
+.day-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.day-date {
+  font-size: 2rem;
+}
+
+.hour {
+  min-height: 4rem;
+  border: 1px solid lightgray;
+  border-top: none;
+  border-left: none;
+  position: relative;
+  padding: 0.125rem;
+  display: flex;
+  flex-direction: column;
+  max-height: 4.166666667%;
+}
+.hour:hover {
+  background-color: lightgray;
+}
+.hour-label {
+  position: absolute;
+  font-size: 0.8rem;
+}
+.events {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  padding-left: 1rem;
+}
+
+.calendar-nav button {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.event,
+.new-event {
+  padding: 0.25rem;
+  border-radius: 0.125rem;
+  margin-right: 0.25rem;
+  background-color: cornflowerblue;
+  flex: 1 1 auto;
+  height: 100%;
+}
+.hour input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
